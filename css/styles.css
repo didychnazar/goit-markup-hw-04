@@ -340,7 +340,7 @@ img {
   border-radius: 0 0 4px 4px;
   padding: 0px 0px 32px 0px;
   width: 264px;
-  height: 380px;
+  height: 428px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background: #fff;
@@ -358,13 +358,51 @@ img {
   padding-bottom: 8px;
 }
 
-.portfolio-logo {
+.team-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.team-social .portfolio-logo {
   margin-bottom: 72px;
 }
 
 .portfolio {
   padding-bottom: 120px;
-  padding-top: 120px;
+}
+
+.portfolio-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.ovrlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  transform: translateY(100%);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.ovrlay-text {
+  color: red;
+
+  font-size: 16px;
+  padding: 40px 32px;
+  text-align: center;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.portfolio-item:hover .ovrlay {
+  transform: translateY(0%);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-list {
@@ -376,6 +414,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 48px 24px;
+  margin-top: 72px;
 }
 
 .portfolio-box {
