@@ -370,9 +370,16 @@ img {
   margin-bottom: 72px;
 }
 
-.team-icons {
+.social-icons {
   fill: #4d5ae5;
   stroke: #f4f4fd;
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-icons:hover,
+.social-icons:focus {
+  background-color: #31d0aa;
 }
 
 .portfolio {
@@ -392,8 +399,6 @@ img {
   height: 100%;
   background-color: #4d5ae5;
   transform: translateY(100%);
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   transition-property: translatey();
   transition-duration: 1s;
 }
@@ -410,7 +415,8 @@ img {
 
 .portfolio-item:hover .ovrlay {
   transform: translateY(0%);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-list {
@@ -463,4 +469,32 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+}
+
+.footer-social {
+  display: flex;
+  align-items: baseline;
+  margin-right: 120px;
+}
+
+.social-item {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-media {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
