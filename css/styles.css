@@ -487,6 +487,7 @@ img {
   width: 264px;
   margin-top: 100px;
   margin-bottom: 100px;
+  margin-right: 120px;
 }
 
 .footer-logo {
@@ -504,7 +505,7 @@ img {
 .footer-social {
   display: inline;
   align-items: baseline;
-  margin-left: 120px;
+
   margin-top: 100px;
   margin-bottom: 100px;
   margin-right: 120px;
@@ -539,5 +540,5 @@ img {
 
 .footer-social-icons:hover,
 .footer-social-icons:focus {
-  background-color: #404bbf;
+  background-color: #31d0aa;
 }
