@@ -433,6 +433,9 @@ img {
 
 .portfolio-item:hover .ovrlay-text {
   transform: translateY(0%);
+}
+
+.portfolio-item:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -484,8 +487,6 @@ img {
 .footer-title {
   height: 112px;
   width: 264px;
-  margin-top: 100px;
-  margin-bottom: 100px;
   margin-right: 120px;
 }
 
@@ -504,7 +505,6 @@ img {
 .footer-social {
   display: inline;
   align-items: baseline;
-
   margin-top: 100px;
   margin-bottom: 100px;
   margin-right: 120px;
