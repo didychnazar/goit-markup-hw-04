@@ -67,7 +67,7 @@
         <div class="container banner-container">
           <h1 class="main-logo">Effective Solutions for Your Business</h1>
 
-          <button class="main-button" type="button">
+          <button class="main-button" type="button" data-modal-open>
             <span class="main-item">Order Service</span>
           </button>
         </div>
@@ -566,5 +566,15 @@
       </div>
     </footer>
     <!-- #endregion footer -->
+
+    <div class="backdrop" data-modal>
+      <div class="modal">
+        <button class="modal-close" type="button" data-modal-close>
+          <span>close</span>
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/model.js"></script>
   </body>
 </html>
